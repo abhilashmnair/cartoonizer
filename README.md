@@ -11,6 +11,6 @@ Create a cartoon version of your image using OpenCV and Python. :snake:
 
 ### Example
 
-[sample.jpg](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/sample.jpg)
+![sample.jpg](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/sample.jpg)
 
-[processed.jpg](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/processed.jpg)
+![processed.jpg](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/processed.jpg)
