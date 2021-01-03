@@ -1,5 +1,5 @@
 # :camera: Cartoonizer :fire:
-Create a cartoon version of your image using OpenCV and Python. :snake:
+Edit your image using OpenCV and Python. :snake:
 
 ### Requirements
 ```pip install opencv-python numpy```
@@ -13,7 +13,7 @@ Create a cartoon version of your image using OpenCV and Python. :snake:
 
 ### Example
 
-Sample Image|Sketch Image|Cartoon Image
+Sample Image|Cartoon Image|Sketch Image
 :-:|:-:|:-:
 ![sample](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/sample.jpg)  |  ![cartoon](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/cartoon.jpg) | ![sample](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/sketched.jpg)
 
