@@ -11,8 +11,8 @@ Create a cartoon version of your image using OpenCV and Python. :snake:
 
 ### Example
 
-Sample Image            |  Processed Image
-:-------------------------:|:-------------------------:
+Sample Image|Processed Image
+:-:|:-:
 ![sample](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/sample.jpg)  |  ![processed](https://raw.githubusercontent.com/abhilashmnair/cartoonizer/main/images/processed.jpg)
 
 Image courtesy : [Unsplash](https://unsplash.com/photos/g14V7_SQyrw)
