@@ -27,9 +27,9 @@ def colorQuantization(img, k):
   result = result.reshape(img.shape)
   return result
 
-def cartoonize():
+def cartoonize(path):
   #Mess with the values according to your choice
-  image = readImage('images/sample.jpg')
+  image = readImage(path)
   edges = edgeMask(image, 7,7)
   image = colorQuantization(image, 9)
   blurred = cv2.bilateralFilter(image, 7, 200, 200)
@@ -38,9 +38,9 @@ def cartoonize():
   #cv2.waitKey(0)
   cv2.imwrite('images/cartoon.jpg',cartoon)
 
-def sketch():
-  img = cv2.imread('images/sample.jpg', 1)
-  imageGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+def sketch(path):
+  image = readImage(path)
+  imageGray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
   img_invert = cv2.bitwise_not(imageGray)
   img_smoothing = cv2.GaussianBlur(img_invert, (21, 21),sigmaX=0, sigmaY=0)
   sketchedImage = dodgeV2(imageGray, img_smoothing)
@@ -49,9 +49,11 @@ def sketch():
   #cv2.waitKey(0)
   cv2.imwrite('images/sketched.jpg',sketchedImage)
 
-n = len(sys.argv)
-for i in range (1,n):
-  if(sys.argv[i]=='sketch'):
-    sketch()
-  elif(sys.argv[i]=='cartoonize'):
-    cartoonize()
+print('Options\n---\n1. Cartoonize\n2. Sketch')
+opt = input('Enter choice : ')
+path = input('Enter image path : ')
+
+if opt == '1':
+  cartoonize(path)
+else :
+  sketch(path)
