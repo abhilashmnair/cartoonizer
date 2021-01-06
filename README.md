@@ -5,10 +5,7 @@ Edit your image using OpenCV and Python. :snake:
 ```pip install opencv-python numpy```
 
 ### How to use :wink:
-- Place your ```sample.jpg``` image in the images folder.
-- Execute
-    - For sketched image : ```py run.py sketch```
-    - For cartoon image : ```py run.py cartoonize```
+- Execute ```py run.py``` and give the complete path of image
 - Yay! There's your processed image in the ```images``` folder.
 
 ### Example
